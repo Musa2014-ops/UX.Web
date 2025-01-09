@@ -1,0 +1,154 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f9f9;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Header */
+  header {
+    background-color: #008796;
+    padding: 25px;
+    text-align: center;
+    color: black;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin:  25px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff5722;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 60px 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .intro-section {
+    background: linear-gradient(to left, #009688, #00796b);
+    color: white;
+  }
+  
+  .about-section {
+    background-color: #f9f9f9;
+  }
+  
+  .diet-recommendations-section {
+    background-color: #fffde7;
+  }
+  
+  .contact-section {
+    background-color: green;
+  }
+  
+  h1, h2 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #007971;
+  }
+  
+  /* Image Styling */
+  .about-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #009688;
+    border-radius: 4px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #00796b;
+  }
+  
+  button {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Responsive Layout */
+  @media screen and (min-width: 768px) {
+    .section {
+      text-align: left;
+    }
+  
+    .home-section {
+      text-align: left;
+      padding: 100px 40px;
+    }
+  
+    .about-section, .diet-recommendations-section, .contact-section {
+      padding: 60px 40px;
+    }
+  
+    .about-image {
+      max-width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }
+  
