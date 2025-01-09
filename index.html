@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cater To Your Dietary Needs</title>
+  <link rel="stylesheet" href="style.css"> <!-- Correct link to style.css -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#diet-approaches">Diet Approaches</a></li>
+        <li><a href="#get-in touch">Get In Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section intro-section">
+    <h1>Welcome to Cater To Your Dietary Needs Guide</h1>
+    <p>The goal at hand is to provide neccessary resources and for individuals with specific dietary requirements. Regardless of if you are managing allergies, or following a special diet, we have all the tools you need!</p>
+  </section>
+
+  <section id="about" class="section about-section">
+    <h2>About Us</h2>
+    <img src="Healthy Food.webp" alt="Healthy food display" class="about-image" />
+    <p>The aim is to offer a tailored meal planning advice to cater to specific individual needs. Regardless of if you're gluten-free, vegan, or following any other diet, we've got what you need!</p>
+  </section>
+
+  <section id="diet-approaches" class="section diet-approaches-section">
+    <h2>Dietary Recommendations</h2>
+    <label for="diet">Choose your dietary preferences:</label>
+    <select id="diet" onchange="showDietApproaches(this.value)">
+      <option value="">--Please select--</option>
+      <option value="gluten-free">Gluten-Free</option>
+      <option value="vegan">Vegan</option>
+      <option value="keto">Keto</option>
+      <option value="paleo">Paleo</option>
+      <option value="mediterranean">Mediterranean</option>
+      <option value="intermittent fasting">Intermittent Fasting</option>
+    </select>
+    <div id="dietApproaches"></div>
+  </section>
+
+  <section id="Get in touch" class="section Get in touch-section">
+    <h2>Get in Touch</h2>
+    <form id="get-in touch-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" compulsory>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cater To Your Dietary Needs | Developed to be at the forefront of best nutrition and diet.</p>
+  </footer>
+
+  <script src="app.js"></script> 
+</body>
+
+</html>
